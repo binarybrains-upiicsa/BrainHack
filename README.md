@@ -50,11 +50,11 @@ Todos los comandos se ejecutan desde la raíz del proyecto, desde una terminal:
 | Comando                | Acción                                           |
 | :--------------------- | :----------------------------------------------- |
 | `deno install`         | Instala las dependencias                         |
-| `deno dev`             | Inicia el servidor de desarrollo local en `localhost:4321` |
-| `deno build`           | Construye tu sitio de producción en `./dist/`    |
-| `deno preview`         | Previsualiza tu construcción localmente, antes del despliegue |
-| `deno astro ...`       | Ejecuta comandos CLI como `astro add`, `astro check` |
-| `deno astro -- --help` | Obtiene ayuda usando la CLI de Astro            |
+| `deno task dev`             | Inicia el servidor de desarrollo local en `localhost:4321` |
+| `deno task build`           | Construye tu sitio de producción en `./dist/`    |
+| `deno task preview`         | Previsualiza tu construcción localmente, antes del despliegue |
+| `deno run npm:astro ...`       | Ejecuta comandos CLI como `astro add`, `astro check` |
+| `deno run npm:astro -- --help` | Obtiene ayuda usando la CLI de Astro            |
 | `deno run npm:shadcn@latest add <componente>` | Agrega componentes de shadcn/ui |
 
 ## 📚 Tecnologías Usadas
