@@ -8,8 +8,7 @@ Explica breve pero conciso que cambios hiciste y el porqué.
 ## Checklist 
 
 - [ ] El código compila sin errores
-- [ ] Test agregados o actualizados
-- [ ] Documentación actualizada
+- [ ] Aprobados todos los checks
 - [ ] Revisado por algun otro miembro del equipo
 
 ## Screenshots (si aplica)
