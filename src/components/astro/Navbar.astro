@@ -1,24 +1,19 @@
-<nav class="bg-background fixed w-full z-20 top-0 start-0  border-gray-200">
+--- 
+import { Image } from 'astro:assets';
+---
+<nav class="bg-background fixed w-full z-20 top-0 start-0">
   <div class="max-w-screen-x1 flex flex-wrap items-center justify-between mx-auto py-2 px-4">
-    
-    <a href="https://github.com/binarybrains-upiicsa" class="flex items-center space-x-5 rtl:space-x-reverse">
-      <img src="/BrainHack/logo.png" class="h-20" alt="Binary Brains Logo">
-      <span class="self-center text-2xl font-semibold whitespace-nowrap text-white"></span>
-    </a>
-
+    <Image src="/BrainHack/binarybrains-logo.png" alt="Binary brains logo" width="80" height="50"/>
     <div class="flex items-center ml-auto space-x-4">
-
       <ul class="hidden md:flex gap-x-10 font-medium text-white">
         <li><a href="#" class="block py-2 px-3 hover:text-primary">Home</a></li>
         <li><a href="#" class="block py-2 px-3 hover:text-primary">About</a></li>
         <li><a href="#" class="block py-2 px-3 hover:text-primary">Challenges</a></li>
         <li><a href="#" class="block py-2 px-3 hover:text-primary">Sponsors</a></li>
       </ul>
-
       <button type="button" class="text-white bg-primary hover:bg-primary focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-14 py-2">
         Register
       </button>
-
       <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false">
         <span class="sr-only">Open main menu</span>
         <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
