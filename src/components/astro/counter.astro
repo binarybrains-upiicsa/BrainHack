@@ -1,0 +1,16 @@
+---
+interface Props {
+    count: number;
+    label: string;
+}
+
+const {count, label} = Astro.props;
+---
+
+<!-- Counter Template  -->
+<div  class="w-16 h-26 md:w-24 md:h-32"> <!-- Counter Container -->
+    <div class="w-16 h-18 md:w-24 md:h-26 bg-[#486AE5] rounded-lg grid place-items-center"> 
+        <p class="text-3xl md:text-5xl text-white text-center font-bold">{count}</p>
+    </div>
+    <p class="text-center mt-2 text-sm md:text-lg font-bold">{label}</p>
+</div>
