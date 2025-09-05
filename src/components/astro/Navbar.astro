@@ -1,6 +1,9 @@
+--- 
+import { Image } from 'astro:assets';
+---
 <nav class="bg-background fixed w-full z-20 top-0 start-0">
   <div class="max-w-screen-x1 flex flex-wrap items-center justify-between mx-auto py-2 px-4">
-    <img src="/public/binarybrains-logo.png" class="h-12" alt="Binary Brains Logo">
+    <Image src="/public/binarybrains-logo.png" alt="Binary brains logo" width="80" height="50"/>
     <div class="flex items-center ml-auto space-x-4">
       <ul class="hidden md:flex gap-x-10 font-medium text-white">
         <li><a href="#" class="block py-2 px-3 hover:text-primary">Home</a></li>
