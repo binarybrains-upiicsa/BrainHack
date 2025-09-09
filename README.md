@@ -12,6 +12,7 @@ Para ejecutar este proyecto en tu máquina local, sigue estos pasos:
 
 2. **Instala las dependencias:**
    ```bash
+   npm install -g deno
    deno install
    ```
 
