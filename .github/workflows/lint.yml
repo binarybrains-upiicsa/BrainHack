@@ -54,6 +54,8 @@ jobs:
         uses: denoland/setup-deno@v2
         with:
           deno-version: v2.x
+      - name: Install dependencies
+        run: deno install
 
       - name: Check typing
         run: deno check --doc .
