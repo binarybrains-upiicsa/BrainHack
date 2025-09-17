@@ -19,10 +19,10 @@
     "indentWidth": 2
   },
   "import": {
-	"@/": "./src/"
-  }
+    "@/": "./src/"
+  },
   "unstable": ["fmt-component"],
   "exclude": [
-    ".astro/*",
+    ".astro/*"
   ]
 }
