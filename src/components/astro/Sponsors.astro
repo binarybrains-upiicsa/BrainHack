@@ -1,0 +1,81 @@
+---
+import { Button } from "@/components/ui/button";
+
+
+const sponsors = [
+  {
+    name: "MLH",
+    fullName: "Major League Hacking",
+    logo: "/BrainHack/sponsors/mlh.png",
+    tier: "platinum"
+  },
+  {
+    name: "GitHub",
+    fullName: "GitHub",
+    logo: "/BrainHack/sponsors/github.png",
+    tier: "platinum"
+  },
+  {
+    name: "Nu",
+    fullName: "Nu",
+    logo: "/BrainHack/sponsors/nu.png",
+    tier: "gold"
+  },
+  {
+    name: "IBM",
+    fullName: "IBM",
+    logo: "/BrainHack/sponsors/ibm.png",
+    tier: "gold"
+  }
+];
+
+
+const getLogoClass = (name: string) =>
+  name === "IBM"
+    ? "h-full w-auto object-contain max-w-[220px] md:max-w-[260px]"
+    : "h-full w-auto object-contain max-w-[180px] md:max-w-[220px]";
+
+---
+
+<section id="sponsors" class="py-20 bg-gradient-to-b from-slate-900 to-slate-800">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
+        Patrocinadores
+      </h2>
+      <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+        Agradecemos a todas las empresas y organizaciones que hacen posible BrainHack. 
+        Su apoyo nos permite crear una experiencia única para todos los participantes.
+      </p>
+    </div>
+
+    <!-- All Sponsors -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
+      {sponsors.map((sponsor) => (
+        <div class="h-24 md:h-28 flex items-center justify-center">
+          <img
+            src={sponsor.logo}
+            alt={`${sponsor.fullName} logo`}
+            class={getLogoClass(sponsor.name)}
+          />
+        </div>
+      ))}
+    </div>
+
+
+    <!-- Call to Action -->
+    <div class="text-center mt-16">
+      <h3 class="text-2xl font-semibold text-white mb-4">
+        ¿Quieres ser parte de BrainHack?
+      </h3>
+      <p class="text-gray-300 mb-8 max-w-2xl mx-auto">
+        Únete a nuestra comunidad de patrocinadores y ayúdanos a hacer de BrainHack 
+        una experiencia inolvidable para todos los participantes.
+      </p>
+      <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-medium transition-colors duration-300">
+        Sé un patrocinador
+      </Button>
+    </div>
+  </div>
+</section>
