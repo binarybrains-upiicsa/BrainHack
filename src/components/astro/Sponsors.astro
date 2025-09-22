@@ -47,13 +47,11 @@ const sponsors = [
     <!-- All Sponsors -->
     <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
       {sponsors.map((sponsor) => (
-        <div class="p-6 bg-slate-800/50 rounded-lg border border-slate-700">
+        <div class="p-6 bg-slate-800/50 rounded-lg border border-slate-700 h-28 md:h-32 flex items-center justify-center">
           <img
             src={sponsor.logo}
             alt={`${sponsor.fullName} logo`}
-            width="200"
-            height="100"
-            class="mx-auto object-contain"
+            class="h-12 md:h-16 w-auto object-contain"
           />
         </div>
       ))}
