@@ -9,14 +9,13 @@ Para ejecutar este proyecto en tu máquina local, sigue estos pasos:
    git clone https://github.com/tu-usuario/BrainHack.git
    cd BrainHack
    ```
-
-2. **Instala las dependencias:**
+2. Instalar [deno](https://deno.com/)
+3. **Instala las dependencias:**
    ```bash
-   npm install -g deno
    deno install
    ```
 
-3. **Ejecuta el servidor de desarrollo:**
+4. **Ejecuta el servidor de desarrollo:**
    ```bash
    deno run dev
    ```
